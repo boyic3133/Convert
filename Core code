@@ -1,0 +1,26 @@
+#number = input("What kind of conversion would you like to make? press enter to continue to list")
+
+#type(number)
+#series = 2*seasons
+#seasons = 24*episodes
+#episodes = 20*minutes
+#convert_back_to_hours =
+
+
+
+
+#This need to be incorperated into a function that deteremines question 1
+
+via_number_episodes = input("State number of episodes : ")
+time_via_number_episodes = int(via_number_episodes)*20
+print("You have wasted a total of " + str(time_via_number_episodes) + " minutes.")
+
+via_number_seasons = input("State number of seasons : ")
+time_via_number_seasons = int(via_number_seasons)*480
+print("You have wasted a total of " + str(time_via_number_seasons) + " minutes.")
+
+via_number_series = input("State number of series : ")
+time_via_number_series = int(via_number_series)*960
+print("You have wasted a total of " + str(time_via_number_series) + " minutes.")
+
+
