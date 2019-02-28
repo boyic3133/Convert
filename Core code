@@ -1,0 +1,85 @@
+#constant variables :
+woo = 1
+
+#start
+input("Welcome to my Anime to time converter!\nCreated by : Constantinos Boyatzis\nPress enter to start!")
+name = input("First what is the Anime that you want to convert named?\nName : ")
+
+
+while int(woo) == 1:
+    MorH = input("What kind of conversion would you like to make for " + name + " ?\nMinutes or Hours?\nType : ")
+    if MorH == "Hours":
+        while int(woo) == 1:
+            answer = input("Choose by  what amount you would like to convert by :\nSeries, Seasons, Episodes\nType : ")
+            if answer == "Episodes":
+                while int(woo) == 1:
+                    via_number_episodes = input("State number of episodes : ")
+                    time_via_number_episodes = int(via_number_episodes) * 0.3
+                    if int(via_number_episodes) >= 0:
+                        print("You have watched " + str(time_via_number_episodes) + " hours of " + name)
+                        break
+                        break
+                    elif int(via_number_episodes) < 0:
+                        print("Choose a positive number!")
+                break
+            elif answer == "Seasons":
+                while int(woo) == 1:
+                    via_number_seasons = input("State number of seasons : ")
+                    time_via_number_seasons = int(via_number_seasons) * 4
+                    if int(via_number_seasons) >= 0:
+                        print("You have watched " + str(time_via_number_seasons) + " hours of " + name)
+                        break
+                    elif int(via_number_seasons) < 0:
+                        print("Choose a positive number!")
+                break
+            elif answer == "Series":
+                while int(woo) == 1:
+                    via_number_series = input("State number of series : ")
+                    time_via_number_series = int(via_number_series) * 16
+                    if int(via_number_series) >= 0:
+                        print("You have watched " + str(time_via_number_series) + " hours of " + name)
+                        break
+                    elif int(via_number_series) < 0:
+                        print("Choose a positive number!")
+                break
+            else:
+                print("You didnt write correct conversion type.\nRemember python is CaSe SeNsItIvE")
+        break
+    elif MorH == "Minutes":
+        while int(woo) == 1:
+            answer = input("Choose what amount you would like to convert by : \nSeries, Seasons, Episodes\nType : ")
+            if answer == "Episodes":
+                while int(woo) == 1:
+                    via_number_episodes = input("State number of episodes : ")
+                    time_via_number_episodes = int(via_number_episodes) * 20
+                    if int(via_number_episodes) >= 0:
+                        print("You have watched " + str(time_via_number_episodes) + " minutes of " + name)
+                        break
+                    elif int(via_number_episodes) < 0:
+                        print("Choose a positive number!")
+                break
+            elif answer == "Series":
+                while int(woo) == 1:
+                    via_number_series = input("State number of series : ")
+                    time_via_number_series = int(via_number_series) * 960
+                    if int(via_number_series) >= 0:
+                        print("You have watched " + str(time_via_number_series) + " minutes of " + name)
+                        break
+                    elif int(via_number_series) < 0:
+                        print("Choose a positive number!")
+                break
+            elif answer == "Seasons":
+                while int(woo) == 1:
+                    via_number_seasons = input("State number of seasons : ")
+                    time_via_number_seasons = int(via_number_seasons) * 480
+                    if int(via_number_seasons) >= 0:
+                        print("You have watched " + str(time_via_number_seasons) + " minutes of " + name)
+                        break
+                    elif int(via_number_seasons) < 0:
+                        print("Choose a positive number!")
+                break
+            else:
+                print("You didnt write correct conversion type.\nRemember python is CaSe SeNsItIvE")
+        break
+    else:
+        print("You didnt write correct conversion type.\nRemember python is CaSe SeNsItIvE")
