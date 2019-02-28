@@ -1,17 +1,17 @@
 #constant variables :
 woo = 1
-
+"""
 #start
-input("Welcome to my Anime to time converter!\nCreated by : Constantinos Boyatzis\nPress enter to start!")
-name = input("First what is the Anime that you want to convert named?\nName : ")
+input("Welcome to my anime to time converter!\nCreated by : Constantinos Boyatzis\nPress enter to start!") #explanation
+name = input("First what is the anime that you want to convert named?\nName : ") #stating name of the anime
 
 
-while int(woo) == 1:
-    MorH = input("What kind of conversion would you like to make for " + name + " ?\nMinutes or Hours?\nType : ")
-    if MorH == "Hours":
-        while int(woo) == 1:
+while int(woo) == 1:  #while loop
+    MorH = input("What kind of conversion would you like to make for " + name + " ?\nMinutes or Hours?\nType : ") # initial question
+    if MorH == "Hours":  #if hours is selected it runs this part
+        while int(woo) == 1: # another loop to make sure that they type the right words
             answer = input("Choose by  what amount you would like to convert by :\nSeasons or Episodes\nType : ")
-            if answer == "Episodes":
+            if answer == "Episodes": #for episodes
                 while int(woo) == 1:
                     via_number_episodes = input("State number of episodes : ")
                     time_via_number_episodes = int(via_number_episodes) * 0.3
@@ -21,7 +21,7 @@ while int(woo) == 1:
                     elif int(via_number_episodes) < 0:
                         print("Choose a positive number!")
                 break
-            elif answer == "Seasons":
+            elif answer == "Seasons": # for seasons
                 while int(woo) == 1:
                     via_number_seasons = input("State number of seasons : ")
                     time_via_number_seasons = int(via_number_seasons) * 4
@@ -62,3 +62,25 @@ while int(woo) == 1:
         break
     else:
         print("You didnt write correct conversion type.\nRemember python is CaSe SeNsItIvE")
+
+
+
+        """
+
+list = []
+input("This is my average number finder!\nMade by : Constantinos Boyatzis\nPress enter to start")
+
+print("Please enter the number\nenter ok when complete")
+while int(woo) == 1:
+    numbers = input("Number : ")
+    if numbers != "ok":
+        list.append(numbers)
+    if numbers == "ok":
+        print(list)
+        distance = len(list)
+        print (distance)
+        break
+        
+    
+
+
