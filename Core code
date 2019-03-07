@@ -1,6 +1,6 @@
-#constant variables :
+# constant variables :
 woo = 1
-"""
+
 #start
 input("Welcome to my anime to time converter!\nCreated by : Constantinos Boyatzis\nPress enter to start!") #explanation
 name = input("First what is the anime that you want to convert named?\nName : ") #stating name of the anime
@@ -65,8 +65,8 @@ while int(woo) == 1:  #while loop
 
 
 
-        """
 
+"""
 list = []
 input("This is my average number finder!\nMade by : Constantinos Boyatzis\nPress enter to start")
 
@@ -78,9 +78,37 @@ while int(woo) == 1:
     if numbers == "ok":
         print(list)
         distance = len(list)
-        print (distance)
-        break
+        all = sum(list)
+        print("You enetered a total of " + str(distance) + " numbers!")
+        def lop(list):
+            var_2 == all / distance
+            return var_2
+        final = lop(list)
+        print("The average of the numbers is " + str(final))
         
-    
+        """
+
+
+
+
+
+#Average machine :
+
+"""
+list = []
+print("Enter the 3 mumbers you want to find the average of")
+num_1 = input("Enter the first number : ")
+num_2 = input("Enter the second number : ")
+num_3 = input("Enter the last number : ")
+
+total = int(num_1) + int(num_2) + int(num_3)
+
+final = total / 3
+print("The average is " + str(final))
+
+"""
+
+
+
 
 
