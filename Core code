@@ -108,6 +108,13 @@ print("The average is " + str(final))
 
 """
 
+import csv
+with open('1710000801-noSymbol.csv') as csvDataFile:
+    data = [row for row in csv.reader(csvDataFile)]
+
+
+print(data[0])
+
 
 
 
